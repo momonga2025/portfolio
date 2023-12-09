@@ -136,6 +136,49 @@ img {
   width: 100%;
 }
 
+.scroll {
+  padding-top: 70px;
+  position: relative;
+  text-align:center;
+}
+
+.scroll::before {
+  animation: scroll 3.5s infinite;
+  display: inline-block;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-bottom: solid 1px #000;
+  border-left: solid 1px #000;
+  transform: rotate(-45deg);
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+@keyframes scroll {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  
+  40% {
+    opacity: 1;
+  }
+  
+  80% {
+    transform: rotate(-45deg) translate(-30px, 30px);
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 0;
+  }
+  
+}
+
 /*--------------------------------
  メインビジュアル
 ---------------------------------*/
