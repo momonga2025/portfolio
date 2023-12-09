@@ -175,8 +175,11 @@ img {
 
 .scroll {
   padding-top:40px;
-  position: relative;
+  position: absolute;
+  top: 80%;
+  left: 50%;
   text-align:center;
+  
 }
 
 .scroll::before {
@@ -190,9 +193,9 @@ img {
   border-left: solid 1px #000;
   transform: rotate(-45deg);
   top: 0;
-  bottom:20px;
+  bottom: 0;
   right: 0;
-  left: 50%;
+  left: 0;
   margin: auto;
 }
 
