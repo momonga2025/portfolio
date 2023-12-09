@@ -177,7 +177,7 @@ img {
   position: absolute;
   top: 80%;
   text-align:center;
-  
+  color: #333;
 }
 
 .scroll::before {
